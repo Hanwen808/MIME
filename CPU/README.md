@@ -41,6 +41,7 @@ $ mkdir build
 $ cd build
 $ cmake ..
 $ make
+$ ../scripts/xxx.sh
 ```
 
 ### Execution
