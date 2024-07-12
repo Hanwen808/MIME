@@ -44,12 +44,6 @@ $ make
 $ ../scripts/xxx.sh
 ```
 
-### Execution
-
-```bash
-$ ./BounceFilter_Cpp
-```
-
 ## Requirements
 
 - CMake 3.26 or above
