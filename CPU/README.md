@@ -1,17 +1,12 @@
-## MIME
+## CPU Implementation
 
 ### Requirements
-- cmake >= 3.10
 - g++
 
-### How to build
+### How to run
 
-You can use the following commands to build and run.
+You can use the following commands to run the codes.
 
 ```
-mkdir build
-cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
-make
-bash ../script/xxx.sh
+./xxx.sh
 ```
