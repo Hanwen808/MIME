@@ -13,13 +13,3 @@ By expanding the dimension of Supercube, we can simultaneously measure the sprea
 We implement our estimator in hardware using NetFPGA.
 Experiments based on real Internet traces show that our method reduces the average relative error by 83.36% for per-destination source flow spread estimation compared to rSkt (SOTA) with 300KB of on-chip memory, and increases update throughput 251.252-fold compared to Supersketch.
 Moreover, our method can be expanded to support real-time detection of super hosts and novel super k-persistent spread measurement.
-
-## About this repo
-
-### CPU
-
-We implement and evaluate all algorithms on a server equipped with two Intel Xeon E5-2643 v4 @3.40GHz CPU and 256GB RAM.
-
-### FPGA
-
-We also implement our algorithm on a NetFPGA-1G-CML development platform featuring a Xilinx Kintex-7 XC7K325T FPGA.
