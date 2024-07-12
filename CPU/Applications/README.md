@@ -5,31 +5,10 @@ This is a Python implementation for MIME in multi-spread measurement, superhost 
 ## Project Structure
 
 ```
-MIME_Cpp/
-├── MIME_main.cpp
-├── CSE_main.cpp
-├── Supersketch_main.cpp
-├── rSkt_main.cpp
-├── vHLL_main.cpp
-├── ipv4.cpp
-├── Headers/
-│   ├── MurmurHash3.h
-│   ├── CSE.h
-│   ├── MIME.h
-│   ├── Supersketch.h
-│   ├── bitmap.h
-│   ├── rSkt.h
-│   ├── Params.h
-│   ├── Sketch.h
-│   └── vHLL.h
-├── Sources/
-│   ├── CSE.cpp
-│   ├── MIME.cpp
-│   ├── MurmurHash3.cpp
-│   ├── Supersketch.cpp
-│   ├── bitmap.cpp
-│   ├── rSkt.cpp
-│   └── vHLL.cpp
+- **MIME_Supercube.ipynb**: The implementation of MIME for four different types of flow spread measurements. 
+- **MIME_three_superhost.ipynb**:	The implementation of MIME for super host detection. 
+- **MIME_three-KPSE.ipynb**: The recording process of super k-persistent spread measurement. 
+- **supercube_solve_kpse.ipynb**: The estimation process of super k-persistent spread measurement. 
 ```
 
 ## Requirements
