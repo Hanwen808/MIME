@@ -13,3 +13,9 @@ By expanding the dimension of Supercube, we can simultaneously measure the sprea
 We implement our estimator in hardware using NetFPGA.
 Experiments based on real Internet traces show that our method reduces the average relative error by 83.36% for per-destination source flow spread estimation compared to rSkt (SOTA) with 300KB of on-chip memory, and increases update throughput 251.252-fold compared to Supersketch.
 Moreover, our method can be expanded to support real-time detection of super hosts and novel super k-persistent spread measurement.
+
+## About this repo
+
+- `data` contains a sample of CAIDA 2019 IP traces.
+- `CPU Implementation` contains source code for C++ and Python implementations of MIME and related work. The Python version includes tests for three measurement tasks: multi-spread measurement, superhost detection, and super k-persistent spread measurement.
+- `FPGA Implementation` contains the source code for NetFPGA implementation.
