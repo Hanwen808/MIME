@@ -16,6 +16,5 @@ Moreover, our method can be expanded to support real-time detection of super hos
 
 ## About this repo
 
-- `data` contains a sample of CAIDA 2019 IP traces.
 - `CPU Implementation` contains source code for C++ and Python implementations of MIME and related work. The Python version includes tests for three measurement tasks: multi-spread measurement, superhost detection, and super k-persistent spread measurement.
 - `FPGA Implementation` contains the source code for NetFPGA implementation.
