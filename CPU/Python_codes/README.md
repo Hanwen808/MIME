@@ -49,3 +49,5 @@ python ./super_kpse.py
 ```shell
 python3 ./super_kpse.py
 ```
+
+Note that, the dataset, memory configuration, the number of different flow items, and the supported tasks need to be modified in the main function of the Python file.
