@@ -51,3 +51,9 @@ python3 ./super_kpse.py
 ```
 
 Note that, the dataset, memory configuration, the number of different flow items, and the supported tasks need to be modified in the main function of the Python file.
+For example, if you want to evaluate performance in different memories (300KB, 500KB, 700KB, 900KB), the paramter $m$ should be reset as below
+```shell
+N = 2607408  # 11405665. 2607408 is the number of distinct stream items in one minute trace, 11405665 is the number of distinct stream items in five minute trace
+for m in [300, 500, 700, 900]:
+    p, k = search_for_k_p(N, m * 8 * 1024)  # get_opt_sampling_rates(N, m * 8 * 1024)
+```
