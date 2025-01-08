@@ -44,6 +44,7 @@ $ make
 ```
 
 If you want to compile MIME and other algorithms using g++, the followding commands should be execueted.
+Note that, the xxx.sh is a bash shell file including g++ compile codes
 ```shell
 ../scripts/MIME.sh  # MIME
 ../scripts/CSE.sh   # CSE
