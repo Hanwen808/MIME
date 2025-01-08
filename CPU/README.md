@@ -35,16 +35,25 @@ MIME_Cpp/
 ## Usage
 
 ### Compilation
-
+If you want to compile MIME and other algorithms using CMake, the following commands should be executed.
 ```bash
 $ mkdir build
 $ cd build
 $ cmake ..
 $ make
-$ ../scripts/xxx.sh
+```
+
+If you want to compile MIME and other algorithms using g++, the followding commands should be execueted.
+```shell
+../scripts/MIME.sh  # MIME
+../scripts/CSE.sh   # CSE
+../scripts/vHLL.sh  # vHLL
+../scripts/rSkt.sh  # rSkt
+../scripts/Supersketch.sh  # supersketch
 ```
 
 ## Requirements
 
 - CMake 3.26 or above
+- g++ 7.5.0 or above
 - Compiler with support for C++17 standard
