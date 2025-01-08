@@ -17,9 +17,35 @@ pip install numpy
 pip install pandas
 ```
 Then the Python execution commands for different tasks are copied as below
+
+(1) four-task spread measurement:
 ```shell
-python ./MIME_four.py #four-task spread measurement
+python ./MIME_four.py
 ```
 ```shell
-python3 ./MIME_four.py #four-task spread measurement
+python3 ./MIME_four.py
+```
+
+(2) six-task spread measurement:
+```shell
+python ./MIME_six.py
+```
+```shell
+python3 ./MIME_six.py
+```
+
+(3) superhost detection:
+```shell
+python ./superhost_detect.py
+```
+```shell
+python3 ./superhost_detect.py
+```
+
+(4) super k-persistent spread measurement:
+```shell
+python ./super_kpse.py
+```
+```shell
+python3 ./super_kpse.py
 ```
