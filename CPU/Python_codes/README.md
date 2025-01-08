@@ -15,6 +15,7 @@ pip install mmh3
 pip install matplotlib
 pip install numpy
 pip install pandas
+pip install tqdm
 ```
 Then the Python execution commands for different tasks are copied as below
 
