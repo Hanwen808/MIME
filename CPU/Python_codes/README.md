@@ -16,4 +16,10 @@ pip install matplotlib
 pip install numpy
 pip install pandas
 ```
-Then all python
+Then the Python execution commands for different tasks are copied as below
+```shell
+python ./MIME_four.py #four-task spread measurement
+```
+```shell
+python3 ./MIME_four.py #four-task spread measurement
+```
