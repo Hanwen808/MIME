@@ -32,7 +32,7 @@ MIME_Cpp/
 │   ├── bitmap.cpp
 │   ├── rSkt.cpp
 │   ├── TCM.cpp
-│   ├── BF_TCM.h
+│   ├── BF_TCM.cpp
 │   └── vHLL.cpp
 ```
 
@@ -55,6 +55,7 @@ Note that, the xxx.sh is a bash shell file including g++ compile codes with opti
 ../scripts/vHLL.sh  # vHLL
 ../scripts/rSkt.sh  # rSkt
 ../scripts/Supersketch.sh  # supersketch
+../scripts/BF_TCM.sh #BF+TCM
 ```
 
 ## Requirements
