@@ -21,6 +21,8 @@ MIME_Cpp/
 │   ├── rSkt.h
 │   ├── Params.h
 │   ├── Sketch.h
+│   ├── TCM.h
+│   ├── BF_TCM.h
 │   └── vHLL.h
 ├── Sources/
 │   ├── CSE.cpp
@@ -29,6 +31,8 @@ MIME_Cpp/
 │   ├── Supersketch.cpp
 │   ├── bitmap.cpp
 │   ├── rSkt.cpp
+│   ├── TCM.cpp
+│   ├── BF_TCM.h
 │   └── vHLL.cpp
 ```
 
