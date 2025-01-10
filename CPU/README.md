@@ -63,3 +63,7 @@ Note that, the xxx.sh is a bash shell file including g++ compile codes with opti
 - CMake 3.26 or above
 - g++ 7.5.0 or above
 - Compiler with support for C++17 standard
+
+## Acknowledgement
+Other baseline methods are implemented based on following papers:
+- **vHLL**: You Zhou, Yian Zhou, Min Chen, Shigang Chen. "Persistent Spread Measurement for Big Network Data Based on Register Intersection". Proc. ACM Meas. Anal. Comput. Syst., 1(1): 15:1-15:29 (2017).
