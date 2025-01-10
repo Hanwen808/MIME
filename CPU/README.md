@@ -66,4 +66,5 @@ Note that, the xxx.sh is a bash shell file including g++ compile codes with opti
 
 ## Acknowledgement
 Other baseline methods are implemented based on following papers:
-- **vHLL**: You Zhou, Yian Zhou, Min Chen, Shigang Chen. "Persistent Spread Measurement for Big Network Data Based on Register Intersection". Proc. ACM Meas. Anal. Comput. Syst., 1(1): 15:1-15:29 (2017).
+- **CSE**: M. Yoon, T. Li, S. Chen, J. . -K. Peir. "Fit a Spread Estimator in Small Memory". Proc. of IEEE INFOCOM, 2009.
+- **vHLL**: Qingjun Xiao, Shigang Chen, You Zhou, Min Chen, Junzhou Luo, Tengli Li, Yibei Ling. "Cardinality Estimation for Elephant Flows: A Compact Solution Based on Virtual Register Sharing". IEEE/ACM Transactions on Networking, 25(6): 3738-3752 (2017).
