@@ -225,8 +225,8 @@ uint32_t GSS::estimate_pds(uint32_t dst) {
 		for (int k = 0; k < w; k++) {
 			int pos = p2 + k * w;
 			for (int j = 0; j < s; ++j) {
-				if ((((value[pos].idx >> ((j << 3)))&((1 << 4) - 1)) == i) && (value[pos].src[j] == g2)) {
-					int tmp_g = value[pos].dst[j];
+				if ((((value[pos].idx >> ((j << 3)+4))&((1 << 4) - 1)) == i) && (value[pos].dst[j] == g2)) {
+					int tmp_g = value[pos].src[j];
 					if (tmp_g == 0) {
 						zero_bits ++;
 					}
@@ -240,7 +240,7 @@ uint32_t GSS::estimate_pds(uint32_t dst) {
 	} else {
 		res = - (1.0 * w * s) * log(1.0 * zero_bits / (1.0 * w * s));
 	}
-	std::map<unsigned int, int>::iterator it = index.find(k2);
+	/*std::map<unsigned int, int>::iterator it = index.find(k2);
 	if (it != index.end()) {
 		int tag = it->second;
 		linknode* node = buffer[tag];
@@ -249,7 +249,19 @@ uint32_t GSS::estimate_pds(uint32_t dst) {
 			res ++;
 			node=node->next;
 		}
-	}
+	}*/
+    for (std::map<unsigned int, int>::iterator it = index.begin(); it != index.end(); ++it) {
+        int tag = it->second;
+        linknode* node = buffer[tag];
+			node = node->next;
+        while (node != NULL) {
+				if(node->key == k2) {
+					res ++;
+					break;	
+				}
+				node = node->next;
+			}
+    }
 	delete[] tmp2;
 	return static_cast<uint32_t>(res);
 }
