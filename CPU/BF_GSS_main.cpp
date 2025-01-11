@@ -141,7 +141,7 @@ int main() {
     getDataSet(dataDir, numOfMinutes, dataset, realDCFlowInfo, realSCFlowInfo, realDPCFlowInfo);
     //prepare the sampling
     cout << endl;
-    unsigned int bitsNum = 300 * 1024 * 8;
+    unsigned int bitsNum = 1000 * 1024 * 8;
     Sketch* skt = new BFGSS(bitsNum / 8 / 1024, 0.2, 1, 1);
     //start sampling
     cout << endl;
@@ -149,9 +149,9 @@ int main() {
     //save the result in files
     cout << endl;
     cout << "save the result in spreads.txt ..." << endl;
-    string outputFilePathDC = "../data/spreads_bftcm_dc.txt";
-    string outputFilePathDPC = "../data/spreads_bftcm_dpc.txt";
-    string outputFilePathSC = "../data/spreads_bftcm_sc.txt";
+    string outputFilePathDC = "../data/spreads_bfgss_dc.txt";
+    string outputFilePathDPC = "../data/spreads_bfgss_dpc.txt";
+    string outputFilePathSC = "../data/spreads_bfgss_sc.txt";
     // Here, we just test estimation of destination address of each source flow
     // Change realDCFlowInfo to realSCFlowInfo can measure the source address of each destination flow, so on.
     saveResults(outputFilePathDC, skt, realDCFlowInfo, 0);
