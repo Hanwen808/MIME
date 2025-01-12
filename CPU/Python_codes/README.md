@@ -11,11 +11,19 @@
 
 To run the codes with your computer, you should first install the following python modules.
 ```shell
-pip install mmh3
-pip install matplotlib
-pip install numpy
-pip install pandas
-pip install tqdm
+$ pip install mmh3
+$ pip install matplotlib
+$ pip install numpy
+$ pip install pandas
+$ pip install tqdm
+```
+or
+```shell
+$ pip3 install mmh3
+$ pip3 install matplotlib
+$ pip3 install numpy
+$ pip3 install pandas
+$ pip3 install tqdm
 ```
 Then the Python execution commands for different tasks are copied as below
 
@@ -23,6 +31,7 @@ Then the Python execution commands for different tasks are copied as below
 ```shell
 python ./MIME_four.py
 ```
+or
 ```shell
 python3 ./MIME_four.py
 ```
@@ -31,6 +40,7 @@ python3 ./MIME_four.py
 ```shell
 python ./MIME_six.py
 ```
+or
 ```shell
 python3 ./MIME_six.py
 ```
@@ -39,6 +49,7 @@ python3 ./MIME_six.py
 ```shell
 python ./superhost_detect.py
 ```
+or
 ```shell
 python3 ./superhost_detect.py
 ```
@@ -47,6 +58,7 @@ python3 ./superhost_detect.py
 ```shell
 python ./super_kpse.py
 ```
+or
 ```shell
 python3 ./super_kpse.py
 ```
