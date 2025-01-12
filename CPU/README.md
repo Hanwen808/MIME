@@ -23,6 +23,8 @@ MIME_Cpp/
 │   ├── Sketch.h
 │   ├── TCM.h
 │   ├── BF_TCM.h
+│   ├── GSS.h
+│   ├── BF_GSS.h
 │   └── vHLL.h
 ├── Sources/
 │   ├── CSE.cpp
@@ -33,6 +35,8 @@ MIME_Cpp/
 │   ├── rSkt.cpp
 │   ├── TCM.cpp
 │   ├── BF_TCM.cpp
+│   ├── GSS.cpp
+│   ├── BF_GSS.cpp
 │   └── vHLL.cpp
 ```
 
@@ -80,3 +84,4 @@ Other baseline methods are implemented based on following papers:
 - **rSkt**: Haibo Wang, Chaoyi Ma, Olufemi O. Odegbile, Shigang Chen, Jih-Kwon Peir. "Randomized Error Removal for Online Spread Estimation in High-Speed Networks". IEEE/ACM Transactions on Networking, 31(2): 558-573 (2023).
 - **Supersketch**([Source Code](https://github.com/JasonXYJing/The-source-code-of/SuperSketch)): Xuyang Jing, Hui Han, Zheng Yan, Witold Pedrycz. "SuperSketch: A Multi-Dimensional Reversible Data Structure for Super Host Identification". IEEE Transactions on Dependable and Secure Computing, 19(4): 2741-2754 (2022).
 - **TCM**([Source Code](https://github.com/Puppy95/Graph-Stream-Sketch/tree/master)): Xiangyang Gou, Lei Zou, Chenxingyu Zhao, Tong Yang. "Graph Stream Sketch: Summarizing Graph Streams With High Speed and Accuracy". IEEE Transactions on Knowledge and Data Engineering, 35(6): 5901-5914 (2023).
+- **GSS**([Source Code](https://github.com/Puppy95/Graph-Stream-Sketch/tree/master)): Xiangyang Gou, Lei Zou, Chenxingyu Zhao, Tong Yang. "Graph Stream Sketch: Summarizing Graph Streams With High Speed and Accuracy". IEEE Transactions on Knowledge and Data Engineering, 35(6): 5901-5914 (2023).
