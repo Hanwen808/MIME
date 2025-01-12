@@ -29,38 +29,38 @@ Then the Python execution commands for different tasks are copied as below
 
 (1) four-task spread measurement:
 ```shell
-python ./MIME_four.py
+$ python ./MIME_four.py
 ```
 or
 ```shell
-python3 ./MIME_four.py
+$ python3 ./MIME_four.py
 ```
 
 (2) six-task spread measurement:
 ```shell
-python ./MIME_six.py
+$ python ./MIME_six.py
 ```
 or
 ```shell
-python3 ./MIME_six.py
+$ python3 ./MIME_six.py
 ```
 
 (3) superhost detection:
 ```shell
-python ./superhost_detect.py
+$ python ./superhost_detect.py
 ```
 or
 ```shell
-python3 ./superhost_detect.py
+$ python3 ./superhost_detect.py
 ```
 
 (4) super k-persistent spread measurement:
 ```shell
-python ./super_kpse.py
+$ python ./super_kpse.py
 ```
 or
 ```shell
-python3 ./super_kpse.py
+$ python3 ./super_kpse.py
 ```
 
 Note that, the dataset, memory configuration, the number of different flow items, and the supported tasks need to be modified in the main function of the Python file.
