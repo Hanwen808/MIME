@@ -1,7 +1,7 @@
 FPGA implementation of MIME
 ============
 
-File Description
+Core File Description
 --------------------
 *  `update_B.v`: the implementation of on-chip filter.
 *  `update.v`: the implementation of MIME (top-level module).
