@@ -1,10 +1,16 @@
-# FPGA Implementation
+FPGA implementation of MIME
+============
 
-This is the implementation for MIME.
+Core File Description
+--------------------
+*  `update_B.v`: the implementation of on-chip filter.
+*  `update.v`: the implementation of MIME (top-level module).
+*  `PCIE_test_codes/`: the core pcie function codes.
+*  `update_fcmp_32ns_32ns_1_2_no_dsp_1.v`: comparation between two uint32_t in `../CPP_simulations/murmurhash.cpp`.
+*  `update_fdiv_32ns_32ns_32_7_no_dsp_1.v`: division algorithm between two float in `../CPP_simulations/murmurhash.cpp`.
+*  `update_fmul_32ns_32ns_32_2_max_dsp_1.v`: multiplicity algorithm between two uint32_t in `../CPP_simulations/murmurhash.cpp`.
 
-## Platform
-
-This implementation is completed on a NetFPGA-1G-CML FPGA development board with 4.5 MB SRAM and four Ethernet interfaces capable of negotiating up to 1 GB/s connections. The development board is connected to a workstation (with a Ryzen7 1700 @3.0GHZ CPU and 64 GB RAM) through PCIe Gen2 X4 lanes. 
-
-## Description
-We provide C++ codes in CPP_simualations for hardware implementation here, which can be directly synthesized into Verilog codes using Vivado HLS.
+Experimental setup
+--------------------
+* compile: Vivado 2020
+* language: Verilog
