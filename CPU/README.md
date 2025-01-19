@@ -55,20 +55,19 @@ $ make
 If you want to compile MIME and other algorithms using g++, the followding commands should be execueted.
 Note that, the xxx.sh is a bash shell file including g++ compile codes with optimize_flag $-O3$.
 ```shell
-$ cd scripts/
-$ chmod u+x ./MIME.sh
+$ chmod u+x ./scripts/MIME.sh
 $ ./MIME.sh  # MIME
-$ chmod u+x ./CSE.sh
+$ chmod u+x ./scripts/CSE.sh
 $ ./CSE.sh   # CSE
-$ chmod u+x ./vHLL.sh
+$ chmod u+x ./scripts/vHLL.sh
 $ ./vHLL.sh  # vHLL
-$ chmod u+x ./rSkt.sh
+$ chmod u+x ./scripts/rSkt.sh
 $ ./rSkt.sh  # rSkt
-$ chmod u+x ./Supersketch.sh
+$ chmod u+x ./scripts/Supersketch.sh
 $ ./Supersketch.sh  # supersketch
-$ chmod u+x ./BF_TCM.sh
+$ chmod u+x ./scripts/BF_TCM.sh
 $ ./BF_TCM.sh #BF+TCM
-$ chmod u+x ./BF_GSS.sh
+$ chmod u+x ./scripts/BF_GSS.sh
 $ ./BF_GSS.sh #BF+GSS
 ```
 
