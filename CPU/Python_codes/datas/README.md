@@ -5,6 +5,6 @@ The code we have provided uses the first-minute IP trace downloaded from CAIDA 2
 
 `00_prot_unique.7z`: The dataset used in the six-task spread measurement, each stream item is modeled as: (src, dst, sport, dport, prot).
 
-`00_processed.txt`: A simple demo used to ensure the proper functioning of the algorithm in **four-task spread measurement**, containing only one PSD flow from the IP address 79.127.180.42, with an actual PSD spread of 94621. Therefore, to test with real one-minute traffic data, the demo file should be deleted, and the dataset file should be renamed to `00_processed.txt`.
+`00.txt`: A simple demo used to ensure the proper functioning of the algorithm in **four-task spread measurement**, containing only one PSD flow from the IP address 79.127.180.42, with an actual PSD spread of 94621. Therefore, to test with real one-minute traffic data, the demo file should be deleted, and the dataset file should be renamed to `00.txt`.
 
 `00_prot_unique.txt`: A simple demo used to ensure the proper functioning of the algorithm in **six-task spread measurement**, containing only one PSD flow from the IP address 79.127.180.42, with an actual PSD spread of 94621. Therefore, to test with real one-minute traffic data, the demo file should be deleted, and the dataset file should be renamed to `00_prot_unique.txt`.
