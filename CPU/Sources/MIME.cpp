@@ -18,6 +18,8 @@ void MIME::update(uint32_t flowid, uint32_t eleid, uint32_t portid) {
     uint32_t hashValue, hashIndex;      // Record the high 32bits and low 32bits hash value of murmurhash3
     memcpy(hash_input_xor, &xor_val, sizeof(uint32_t));
     MurmurHash3_x86_32(hash_input_xor, 4, 12412, &hashValue);
+    // in most scenario, the optimal hash function is one. So we only test the throughput with one hash function,
+    // for optimal hash function number is more than one, we provide cores in Python_codes/ directory.
     hashIndex = hashValue % length;
     if (!getbit(hashIndex, bitmap)) {
         setbit(hashIndex, bitmap);      // update the associated hashed bit
