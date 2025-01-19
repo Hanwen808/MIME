@@ -5,7 +5,7 @@ This is a C++ implementation for MIME and related solutions.
 ## Project Structure
 
 ```
-MIME_Cpp/
+CPU/
 ├── MIME_main.cpp
 ├── CSE_main.cpp
 ├── Supersketch_main.cpp
