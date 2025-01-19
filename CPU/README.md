@@ -43,8 +43,12 @@ MIME_Cpp/
 ## Usage
 
 ### Compilation
+Before compiling, make sure you are in the directory /CPU/. And create a directory /result/ to save the running results of different algorithms.
+```bash
+$ mkdir result/
+```
+
 If you want to compile MIME and other algorithms using CMake, the following commands should be executed.
-Before compiling, please make sure you are in the directory /CPU/
 ```bash
 $ mkdir build
 $ cd build
