@@ -25,7 +25,9 @@ $ pip3 install numpy
 $ pip3 install pandas
 $ pip3 install tqdm
 ```
-Then the Python execution commands for different tasks are copied as below
+Then please unzip the relevant dataset files under `./datas/`, the dataset descriptions are provided in `./datas/README.md`.
+
+The Python execution commands for different tasks are copied as below
 
 (1) four-task spread measurement:
 ```shell
