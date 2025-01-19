@@ -280,7 +280,7 @@ class MIME:
         precision = TP / (TP + FP)
         recall = TP / (TP + FN)
         F1 = (2 * precision * recall) / (precision + recall)
-        print("水平扫描攻击：准确率：{:.2f}， 召回率：{:.2f}，F1：{:.2f}.".format(precision, recall, F1))
+        print("Horizontal scanners: precision: {:.2f}, recall: {:.2f}, F1: {:.2f}.".format(precision, recall, F1))
         return precision, recall, F1
 
     def show_sdpc(self):
@@ -290,17 +290,20 @@ class MIME:
         precision = TP / (TP + FP)
         recall = TP / (TP + FN)
         F1 = (2 * precision * recall) / (precision + recall)
-        print("垂直扫描攻击：准确率：{:.2f}， 召回率：{:.2f}，F1：{:.2f}.".format(precision, recall, F1))
+        print("Vertical scanners: precision: {:.2f}, recall: {:.2f}, F1: {:.2f}.".format(precision, recall, F1))
         return precision, recall, F1
 
     def show_ssc(self):
         TP = len(self.ddos_attackers.intersection(self.real_ddos_attackers))
+        if TP == 0:
+            print("There is no ddos attackers.")
+            return 0, 0, 0
         FP = len(self.ddos_attackers - self.real_ddos_attackers)
         FN = len(self.real_ddos_attackers - self.ddos_attackers)
         precision = TP / (TP + FP)
         recall = TP / (TP + FN)
         F1 = (2 * precision * recall) / (precision + recall)
-        print("DDoS攻击：准确率：{:.2f}， 召回率：{:.2f}， F1：{:.2f}.".format(precision, recall, F1))
+        print("DDoS attackers: precision: {:.2f}, recall: {:.2f}, F1: {:.2f}.".format(precision, recall, F1))
         return precision, recall, F1
 
     def build_inv_table(self):
@@ -523,7 +526,7 @@ class MIME:
 
 if __name__ == '__main__':
     N = 2431002  # 10542501 #2431002
-    filename = "./datas/00.txt"
+    filename = "./datas/00_three.txt"
     memory_lst = [x for x in [100, 300, 500, 700, 900]]
     filepath = "./experiments/SuperHost/Supercube/" + addition_dir
     if not os.path.isdir(filepath):
