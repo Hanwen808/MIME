@@ -5,7 +5,7 @@
 - `./MIME_four.py`: source codes for four-task spread estimation.
 - `./MIME_six.py`: source codes for six-task spread estimation.
 - `./superhost_detect.py`: source codes for superhost detection.
-- `./super_kpse.py`: source codes for super k-persistent spread estimation.
+- `./super_kpse.py`: source codes for super k-persistent spread estimation. Since the sKPSE task requires collecting multiple supercubes using MIME over several periods, we only provide the code for executing sKPSE based on the collected supercubes.
 
 ## Run
 
