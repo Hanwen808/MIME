@@ -77,7 +77,7 @@ $ ./BF_GSS.sh #BF+GSS
 
 ## Requirements
 
-- CMake 3.26 or above
+- CMake 3.10 or above
 - g++ 7.5.0 or above
 - Compiler with support for C++17 standard
 
