@@ -494,7 +494,7 @@ if __name__ == '__main__':
         p, k = search_for_k_p(N, m * 8 * 1024)  # get_opt_sampling_rates(N, m * 8 * 1024)
         print("The optimal sampling rate is {}".format(p))
         mime = MIME(p, m * 8 * 1024)
-        mime.run("./datas/00.txt")
+        mime.run("./datas/00_four.txt")
         print(mime.sample_nums)
         mime.draw(0)
         mime.draw(1)

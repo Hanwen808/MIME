@@ -471,7 +471,7 @@ for m in [500]:
     p, k = search_for_k_p(N, m * 8 * 1024)
     print("The optimal sampling rate is {}".format(p))
     mime = MIME(p, m * 8 * 1024)
-    mime.run("./datas/00_prot_unique.txt")
+    mime.run("./datas/00_six.txt")
     mime.draw(0)
     mime.draw(1)
     mime.draw(2)
