@@ -62,19 +62,19 @@ If you want to compile MIME and other algorithms using g++, the followding comma
 Note that, the xxx.sh is a bash shell file including g++ compile codes with optimize_flag $-O3$.
 ```shell
 $ chmod u+x ./scripts/MIME.sh
-$ ./MIME.sh  # MIME
+$ ./scripts/MIME.sh  # MIME
 $ chmod u+x ./scripts/CSE.sh
-$ ./CSE.sh   # CSE
+$ ./scripts/CSE.sh   # CSE
 $ chmod u+x ./scripts/vHLL.sh
-$ ./vHLL.sh  # vHLL
+$ ./scripts/vHLL.sh  # vHLL
 $ chmod u+x ./scripts/rSkt.sh
-$ ./rSkt.sh  # rSkt
+$ ./scripts/rSkt.sh  # rSkt
 $ chmod u+x ./scripts/Supersketch.sh
-$ ./Supersketch.sh  # supersketch
+$ ./scripts/Supersketch.sh  # supersketch
 $ chmod u+x ./scripts/BF_TCM.sh
-$ ./BF_TCM.sh #BF+TCM
+$ ./scripts/BF_TCM.sh #BF+TCM
 $ chmod u+x ./scripts/BF_GSS.sh
-$ ./BF_GSS.sh #BF+GSS
+$ ./scripts/BF_GSS.sh #BF+GSS
 ```
 
 ## Requirements
