@@ -54,7 +54,8 @@ $ mkdir build
 $ cd build
 $ cmake ..
 $ make
-$ ../MIME
+$ cd ..
+$ ./MIME
 ```
 
 If you want to compile MIME and other algorithms using g++, the followding commands should be execueted.
