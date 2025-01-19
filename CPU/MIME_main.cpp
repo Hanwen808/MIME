@@ -73,7 +73,7 @@ void getDataSet(string dataDir, unsigned int numOfMinutes, vector<pair<pair<uint
     clock_t start = clock();
     for (unsigned int i = 0; i < numOfMinutes; i++) {
         sprintf(dataFileName, "%02d.txt ", i);
-        string oneDataFilePath = "./00.txt"; // Organize a complete filename.
+        string oneDataFilePath = "./data/00.txt"; // Organize a complete filename.
         cout << oneDataFilePath << endl;
         fstream fin(oneDataFilePath);
         while (fin.is_open() && fin.peek() != EOF) {
@@ -152,7 +152,7 @@ void saveResults(string outputFilePath, Sketch* skt, unordered_map<uint32_t , un
 int main() {
     //prepare the dataset
     cout << "prepare the dataset" << endl;
-    string dataDir = R"(../data/)";
+    string dataDir = R"(./data/)";
     unsigned int numOfMinutes = 1;
     vector<pair<pair<uint32_t , uint32_t>, uint32_t>> dataset;
     unordered_map<uint32_t , unordered_set<uint32_t >> realDCFlowInfo, realSCFlowInfo, realDPCFlowInfo;
@@ -164,16 +164,14 @@ int main() {
     float p = calculateSamplingrate(bitsNum, DISTINCT_NUM);
     cout << "Total space is " << 1.0 * bitsNum / 8 / 1024 << "KB, optimal sampling rate is " << p << endl;
     Sketch* skt = new MIME(bitsNum, p);
-    //start sampling
     cout << endl;
-    cout << "start sampling" << endl;
     processPackets(skt, dataset);
     //save the result in files
     cout << endl;
     cout << "save the result in spreads.txt ..." << endl;
-    string outputFilePathDC = "../data/spreads_mime_dc.txt";
-    string outputFilePathDPC = "../data/spreads_mime_dpc.txt";
-    string outputFilePathSC = "../data/spreads_mime_sc.txt";
+    string outputFilePathDC = "./result/spreads_mime_dc.txt";
+    string outputFilePathDPC = "./result/spreads_mime_dpc.txt";
+    string outputFilePathSC = "./result/spreads_mime_sc.txt";
     // Here, we just test estimation of destination address of each source flow
     // Change realDCFlowInfo to realSCFlowInfo can measure the source address of each destination flow, so on.
     saveResults(outputFilePathDC, skt, realDCFlowInfo, 0);
