@@ -44,6 +44,7 @@ MIME_Cpp/
 
 ### Compilation
 If you want to compile MIME and other algorithms using CMake, the following commands should be executed.
+Before compiling, please make sure you are in the directory /CPU/
 ```bash
 $ mkdir build
 $ cd build
