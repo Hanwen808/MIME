@@ -21,9 +21,9 @@ private:
     float post, p;  // p is the overall sampling rate in MIME, post is the adaptive-sampling rate
     int splitIndex;
     // Supercube implemented by hash table in off-chip memory used to record the sampled non-duplicates
-    std::unordered_map<uint32_t , std::unordered_map<uint32_t , std::unordered_set<uint32_t>>> SupercubeDC;
-    std::unordered_map<uint32_t , std::unordered_map<uint32_t , std::unordered_set<uint32_t>>> SupercubeDPC;
-    std::unordered_map<uint32_t , std::unordered_map<uint32_t , std::unordered_set<uint32_t>>> SupercubeSC;
+    std::unordered_map<uint32_t, std::unordered_map<uint32_t, std::unordered_set<uint32_t>>> Supercube;
+    std::unordered_map<uint32_t, std::unordered_map<uint32_t, std::unordered_set<uint32_t>>> invSupercube;
+
 public:
     MIME(int, float);
     ~MIME();
@@ -32,6 +32,8 @@ public:
     // Estimation of MIME
     int estimate(uint32_t , int);
     int sampleNum = 0;
+    // Build inverse Supercube
+    void build();
 };
 
 #endif //MIME_MIME_H
