@@ -163,8 +163,10 @@ int main() {
     unsigned int bitsNum = 300 * 1024 * 8;
     float p = calculateSamplingrate(bitsNum, DISTINCT_NUM);
     cout << "Total space is " << 1.0 * bitsNum / 8 / 1024 << "KB, optimal sampling rate is " << p << endl;
-    Sketch* skt = new MIME(bitsNum, p);
+    MIME* skt = new MIME(bitsNum, p);
+    //start sampling
     cout << endl;
+    cout << "start sampling" << endl;
     processPackets(skt, dataset);
     //save the result in files
     cout << endl;
@@ -174,6 +176,7 @@ int main() {
     string outputFilePathSC = "./result/spreads_mime_sc.txt";
     // Here, we just test estimation of destination address of each source flow
     // Change realDCFlowInfo to realSCFlowInfo can measure the source address of each destination flow, so on.
+    skt->build();
     saveResults(outputFilePathDC, skt, realDCFlowInfo, 0);
     cout << "DC has been saved." << endl;
     saveResults(outputFilePathDPC, skt, realDPCFlowInfo, 1);
